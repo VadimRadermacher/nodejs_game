@@ -34,9 +34,6 @@ function displayRandomCard(divName, array) {
 	img.src = cardName.image;
 	let card = document.getElementById(divName);
 	card.appendChild(img);
-	let name = document.createElement('h1');
-	name.innerText = cardName.name;
-	card.appendChild(name);
 }
 
 displayRandomCard("card", cards);
