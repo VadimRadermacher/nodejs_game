@@ -1,0 +1,31 @@
+{
+  "name": "love-letter.io",
+  "version": "0.0.1",
+  "description": "an online game based on the card game love-letter",
+  "dependencies": {
+    "bufferutil": "4.0.1",
+    "express": "4.16.4",
+    "node-static": "^0.7.11",
+    "socket.io": "2.2.0",
+    "utf-8-validate": "5.0.2",
+    "ws": "6.2.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadimRadermacher/NodeJS-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VadimRadermacher/NodeJS-Game/issues"
+  },
+  "homepage": "https://github.com/VadimRadermacher/NodeJS-Game#readme"
+}

@@ -1,0 +1,246 @@
+
+body{
+	background-image: url('https://www.photohdx.com/images/2017/05/clean-deep-red-paper-texture-background.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+.princesseLogo{
+	max-width:20rem;
+	animation:pulse 5s infinite;
+}
+.cardPack{
+	position: absolute;
+	max-width:20rem;
+	right:10rem;
+	top:22rem;
+}
+.emplacement1 {
+	position: absolute;
+	max-width:12rem;
+	right:47rem;
+	top:13rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	filter:drop-shadow(3px 3px 4px black);
+}
+.emplacement2{
+	position: absolute;
+	max-width:12rem;
+	right:47rem;
+	top:30rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	filter:drop-shadow(3px 3px 4px black);
+}
+.emplacement3{
+	position: absolute;
+	max-width:12rem;
+	right:65rem;
+	top:30rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	filter:drop-shadow(3px 3px 4px black);
+}
+.emplacement4{
+	position: absolute;
+	max-width:12rem;
+	right:65rem;
+	top:13rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	filter:drop-shadow(3px 3px 4px black);
+}
+.baron {
+	position: absolute;
+	right:30rem;
+	bottom:18rem;
+	max-width:18rem;
+	animation: play1 5.6s forwards ;
+}
+.explode{
+	position:absolute;
+	right:48rem;
+	top:27.6rem;
+	max-width:16rem;
+	animation:appear 5.9s forwards;
+}
+.welcomeLetters{
+	position:absolute;
+	left:48rem;
+	top:23rem;
+	width:2.7rem;
+	animation:welcome 5s forwards;
+}
+
+
+
+/* RESPONSIVE PC BECODE  */
+@media screen and (max-width:1400px){
+	.princesseLogo{
+		max-width:10rem;
+		animation:pulse 5s infinite;
+	}
+	.cardPack{
+		position: absolute;
+		max-width:10rem;
+		right:5rem;
+		top:12rem;
+	}
+.emplacement1 {
+	position: absolute;
+	max-width:8rem;
+	right:37rem;
+	top:3rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	filter:drop-shadow(3px 3px 4px black);
+}
+.emplacement2{
+	position: absolute;
+	max-width:8rem;
+	right:37rem;
+	top:20rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	filter:drop-shadow(3px 3px 4px black);
+}
+.emplacement3{
+	position: absolute;
+	max-width:8rem;
+	right:55rem;
+	top:20rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	filter:drop-shadow(3px 3px 4px black);
+}
+.emplacement4{
+	position: absolute;
+	max-width:8rem;
+	right:55rem;
+	top:3rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	filter:drop-shadow(3px 3px 4px black);
+}
+.baron {
+	position: absolute;
+	right:20rem;
+	bottom:8rem;
+	max-width:10rem;
+	animation: play1 5.6s forwards ;
+}
+.explode{
+	position:absolute;
+	right:38rem;
+	top:17.6rem;
+	max-width:10rem;
+	animation:appear 5.9s forwards;
+}
+.welcomeLetters{
+	position:absolute;
+	left:39rem;
+	top:16rem;
+	width:2rem;
+	animation:welcome 5s forwards;
+}
+}
+/*FIN RESPONSIVE PC BECODE */
+
+
+
+.particles{
+	width:95%;
+	max-height:35rem;
+	opacity:0.2;
+	position:absolute;
+}
+
+
+@keyframes welcome{
+	0%{
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+	50%{
+		transform: scale(40.0);
+		-webkit-transform: scale(40.0);
+		opacity:1;
+	}
+	100%{
+		transform: scale(40.0);
+		-webkit-transform: scale(40.0);
+		opacity:0;
+	}
+}
+/* .baron:hover{
+	animation: play1 2s forwards ;
+} */
+@keyframes appear{
+	0%{
+		opacity:0;
+	}
+	89%{
+		opacity:0;
+	}
+	95%{
+		opacity:0
+	}
+	96%{
+		opacity:1;
+	}
+97%{
+	opacity:1;
+}
+	98%{
+		opacity:1;
+	}
+	99%{
+		opacity:0;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+@keyframes pulse{
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.7;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+
+@keyframes play1 {
+		0% {
+				transform: scale(1.0);
+				-webkit-transform: scale(1.0);
+				right:20rem;
+				bottom:8rem;
+				opacity:0;
+		}
+		90%{
+			transform: scale(1.0);
+			-webkit-transform: scale(1.0);
+			right:20rem;
+			bottom:8rem;
+			opacity:0;
+		}
+		93%{
+			opacity:1;
+			right:28rem;
+			top:14.1rem;
+		}
+		96%{
+			transform: scale(0.85);
+			-webkit-transform: scale(0.85);
+			right:28rem;
+			top:14.1rem;
+			transform: rotate(180deg);
+		}
+		99%{
+			transform: rotate(360deg);
+		}
+		100% {
+				transform: scale(0.7);
+				-webkit-transform: scale(0.7);
+				right:36rem;
+				top:18.2rem;
+		}
+}
