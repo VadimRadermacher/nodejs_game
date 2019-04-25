@@ -38,6 +38,7 @@ body{
 	top:30rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
+	margin-right:5rem;
 }
 .emplacement4{
 	position: absolute;
@@ -46,6 +47,7 @@ body{
 	top:13rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
+	margin-right:5rem;
 }
 .baron {
 	position: absolute;
@@ -120,6 +122,7 @@ body{
 	top:20rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
+	margin-right:0;
 }
 .emplacement4{
 	position: absolute;
@@ -128,6 +131,7 @@ body{
 	top:3rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
+	margin-right:0;
 }
 .explode{
 	position:absolute;
@@ -198,20 +202,23 @@ body{
 		-webkit-transform: scale(1.0);
 	}
 	50%{
+		transform:rotate(360deg);
 		transform: scale(40.0);
 		-webkit-transform: scale(40.0);
 		opacity:1;
+		left:39rem;
 	}
 	100%{
 		transform: scale(40.0);
 		-webkit-transform: scale(40.0);
 		opacity:0;
+			left:42rem;
 	}
 }
 /* .baron:hover{
 	animation: play1 2s forwards ;
 } */
-/*@keyframes spin{
+@keyframes spin{
 	0%{
 		transform: rotate(0deg);
 	}
@@ -222,7 +229,7 @@ body{
 		transform: rotate(360deg);
 	}
 }
-*/@keyframes appear{
+@keyframes appear{
 	0%{
 		opacity:0;
 	}
