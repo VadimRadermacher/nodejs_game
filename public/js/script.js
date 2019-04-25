@@ -31,12 +31,10 @@ console.log(garde.image);
 function displayRandomCard(divName, array) {
 	let cardName = array[Math.floor(Math.random() * 8)];
  	let img = document.createElement('img');
+	img.className='baron'
 	img.src = cardName.image;
 	let card = document.getElementById(divName);
 	card.appendChild(img);
-	let name = document.createElement('h1');
-	name.innerText = cardName.name;
-	card.appendChild(name);
 }
 
 displayRandomCard("card", cards);

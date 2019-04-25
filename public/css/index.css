@@ -49,8 +49,8 @@ body{
 .baron {
 	position: absolute;
 	right:30rem;
-	bottom:18rem;
-	max-width:18rem;
+	bottom:20rem;
+	max-width:20rem;
 	animation: play1 5.6s forwards ;
 }
 .explode{
@@ -75,6 +75,14 @@ body{
 	.princesseLogo{
 		max-width:10rem;
 		animation:pulse 5s infinite;
+	}
+	.baron {
+		position: absolute;
+		right:30rem;
+		top:0;
+		min-width:10rem;
+		max-width:10rem;
+		animation: play1 5.6s forwards ;
 	}
 	.cardPack{
 		position: absolute;
@@ -113,13 +121,6 @@ body{
 	top:3rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
-}
-.baron {
-	position: absolute;
-	right:20rem;
-	bottom:8rem;
-	max-width:10rem;
-	animation: play1 5.6s forwards ;
 }
 .explode{
 	position:absolute;
@@ -212,7 +213,7 @@ body{
 				transform: scale(1.0);
 				-webkit-transform: scale(1.0);
 				right:20rem;
-				bottom:8rem;
+				bottom:32rem;
 				opacity:0;
 		}
 		90%{
