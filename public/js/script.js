@@ -37,7 +37,7 @@ console.log(garde.image);
 // }
 
 function displayRandomCard(divName, array) {
-	let cardName = array[Math.floor(Math.random() * 8)];
+	let cardName = array[Math.floor(Math.random() * 16)];
  	let img = document.createElement('img');
 	img.className='baron'
 	img.src = cardName.image;
