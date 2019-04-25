@@ -8,23 +8,22 @@ let comptesse = {name:"comptesse", value: 7, image: "js/comptesse.jpg"};
 let princesse = {name:"princesse", value: 8, image: "js/princesse.jpg"};
 
 let cards = [
-				princesse,
-				prince,
 				garde,
+				garde,
+				garde,
+				garde,
+				garde,
+				pretre,
+				pretre,
+				baron,
+				baron,
+				servante,
+				servante,
+				prince,
+				prince,
 				roi,
-				garde,
-				pretre,
-				pretre,
-				baron,
-				baron,
-				servante,
-				servante,
-				garde,
-				prince,
-				garde,
-				garde,
 				comptesse,
-				
+				princesse
 ];
 
 console.log(garde);
@@ -40,12 +39,27 @@ console.log(garde.image);
 function displayRandomCard(divName, array) {
 	let cardName = array[Math.floor(Math.random() * 16)];
  	let img = document.createElement('img');
-	img.className='baron'
+	img.id='baron'
 	img.src = cardName.image;
 	let card = document.getElementById(divName);
 	card.appendChild(img);
 }
 
-displayRandomCard("card", cards);
+function displayRandomCard2(divName, array) {
+let cardName = array[Math.floor(Math.random() * 16)];
+let img2 = document.createElement('img');
+img2.id='princesse'
+img2.src = cardName.image;
+let card2 = document.getElementById(divName);
+card.appendChild(img2);
+}
 
+function displayRandomCard(divName, array) {
+	let cardName = array[Math.floor(Math.random() * 16)];
+displayRandomCard("card2", cards);
+}
+function displayRandomCard2(divName, array) {
+	let cardName = array[Math.floor(Math.random() * 16)];
+displayRandomCard("card", cards);
+}
 console.log(garde, pretre, baron, servante, prince, roi, comptesse, princesse);

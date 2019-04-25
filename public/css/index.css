@@ -49,9 +49,17 @@ body{
 	filter:drop-shadow(3px 3px 4px black);
 	margin-right:5rem;
 }
-.baron {
+#baron {
 	position: absolute;
 	right:30rem;
+	top:50rem;
+	max-width:15rem;
+	min-width:15rem;
+	animation: play1 5.6s forwards ;
+}
+#princesse {
+	position: absolute;
+	left:30rem;
 	top:50rem;
 	max-width:15rem;
 	min-width:15rem;
@@ -70,6 +78,7 @@ body{
 	top:28rem;
 	width:2.7rem;
 	animation:welcome1 5s forwards;
+	filter:drop-shadow(0.2px 0.2px 0.1px black);
 }
 .particles{
 	width:95%;
@@ -85,9 +94,17 @@ body{
 		max-width:10rem;
 		animation:pulse 5s infinite;
 	}
-	.baron {
+	#baron {
 		position: absolute;
 		right:30rem;
+		top:0;
+		min-width:10rem;
+		max-width:10rem;
+		animation: play1A 5.6s forwards ;
+	}
+	#princesse {
+		position: absolute;
+		left:30rem;
 		top:0;
 		min-width:10rem;
 		max-width:10rem;
