@@ -8,22 +8,23 @@ let comptesse = {name:"comptesse", value: 7, image: "js/comptesse.jpg"};
 let princesse = {name:"princesse", value: 8, image: "js/princesse.jpg"};
 
 let cards = [
-				garde,
-				garde,
-				garde,
-				garde,
-				garde,
-				pretre,
-				pretre,
-				baron,
-				baron,
-				servante,
-				servante,
+				princesse,
 				prince,
-				prince,
+				garde,
 				roi,
+				garde,
+				pretre,
+				pretre,
+				baron,
+				baron,
+				servante,
+				servante,
+				garde,
+				prince,
+				garde,
+				garde,
 				comptesse,
-				princesse
+				
 ];
 
 console.log(garde);
