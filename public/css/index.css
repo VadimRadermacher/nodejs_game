@@ -69,7 +69,7 @@ body{
 	animation:welcome 5s forwards;
 }
 .particles{
-	width:100%;
+	width:95%;
 	max-height:100rem;
 	opacity:0.2;
 	position:absolute;
@@ -256,25 +256,25 @@ body{
 				-webkit-transform: scale(1.0);
 				right:32rem;
 				opacity:0;
-				top:42rem;
+				top:36rem;
 		}
 		90%{
 			transform: scale(1.0);
 			-webkit-transform: scale(1.0);
 			right:32rem;
 			opacity:0;
-			top:42rem;
+			top:36rem;
 		}
 		93%{
 			opacity:1;
 			right:32rem;
-			top:42rem;
+			top:36rem;
 		}
 		96%{
 			transform: scale(0.85);
 			-webkit-transform: scale(0.85);
 			right:32rem;
-			top:42rem;
+			top:36rem;
 			transform: rotate(180deg);
 		}
 		99%{
