@@ -10,9 +10,10 @@ body{
 }
 .cardPack{
 	position: absolute;
-	max-width:20rem;
-	right:10rem;
-	top:22rem;
+	max-width:16rem;
+	right:13rem;
+	top:17rem;
+	filter:drop-shadow(4px 4px 7px black);
 }
 .emplacement1 {
 	position: absolute;
@@ -63,8 +64,8 @@ body{
 }
 .welcomeLetters{
 	position:absolute;
-	left:48rem;
-	top:23rem;
+	left:58rem;
+	top:28rem;
 	width:2.7rem;
 	animation:welcome 5s forwards;
 }
@@ -210,7 +211,18 @@ body{
 /* .baron:hover{
 	animation: play1 2s forwards ;
 } */
-@keyframes appear{
+/*@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+*/@keyframes appear{
 	0%{
 		opacity:0;
 	}

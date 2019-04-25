@@ -9,9 +9,17 @@ let princesse = {name:"princesse", value: 8, image: "js/princesse.jpg"};
 
 let cards = [
 				garde,
+				garde,
+				garde,
+				garde,
+				garde,
+				pretre,
 				pretre,
 				baron,
+				baron,
 				servante,
+				servante,
+				prince,
 				prince,
 				roi,
 				comptesse,
