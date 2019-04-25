@@ -47,11 +47,12 @@ body{
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
 }
-#card {
+.baron {
 	position: absolute;
 	right:30rem;
-	bottom:18rem;
-	max-width:18rem;
+	top:50rem;
+	max-width:15rem;
+	min-width:15rem;
 	animation: play1 5.6s forwards ;
 }
 .explode{
@@ -68,7 +69,12 @@ body{
 	width:2.7rem;
 	animation:welcome 5s forwards;
 }
-
+.particles{
+	width:100%;
+	max-height:100rem;
+	opacity:0.2;
+	position:absolute;
+}
 
 
 /* RESPONSIVE PC BECODE  */
@@ -76,6 +82,14 @@ body{
 	.princesseLogo{
 		max-width:10rem;
 		animation:pulse 5s infinite;
+	}
+	.baron {
+		position: absolute;
+		right:30rem;
+		top:0;
+		min-width:10rem;
+		max-width:10rem;
+		animation: play1A 5.6s forwards ;
 	}
 	.cardPack{
 		position: absolute;
@@ -115,13 +129,6 @@ body{
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
 }
-.baron {
-	position: absolute;
-	right:20rem;
-	bottom:8rem;
-	max-width:10rem;
-	animation: play1 5.6s forwards ;
-}
 .explode{
 	position:absolute;
 	right:38rem;
@@ -136,17 +143,53 @@ body{
 	width:2rem;
 	animation:welcome 5s forwards;
 }
-}
-/*FIN RESPONSIVE PC BECODE */
-
-
-
 .particles{
 	width:95%;
 	max-height:35rem;
 	opacity:0.2;
 	position:absolute;
 }
+@keyframes play1A {
+		0% {
+				transform: scale(1.0);
+				-webkit-transform: scale(1.0);
+				right:20rem;
+				bottom:32rem;
+				opacity:0;
+		}
+		90%{
+			transform: scale(1.0);
+			-webkit-transform: scale(1.0);
+			right:20rem;
+			bottom:8rem;
+			opacity:0;
+		}
+		93%{
+			opacity:1;
+			right:28rem;
+			top:14.1rem;
+		}
+		96%{
+			transform: scale(0.85);
+			-webkit-transform: scale(0.85);
+			right:28rem;
+			top:14.1rem;
+			transform: rotate(180deg);
+		}
+		99%{
+			transform: rotate(360deg);
+		}
+		100% {
+				transform: scale(0.7);
+				-webkit-transform: scale(0.7);
+				right:36rem;
+				top:18.2rem;
+		}
+}
+}
+/*FIN RESPONSIVE PC BECODE */
+
+
 
 
 @keyframes welcome{
@@ -223,27 +266,27 @@ body{
 		0% {
 				transform: scale(1.0);
 				-webkit-transform: scale(1.0);
-				right:20rem;
-				bottom:8rem;
+				right:32rem;
 				opacity:0;
+				top:42rem;
 		}
 		90%{
 			transform: scale(1.0);
 			-webkit-transform: scale(1.0);
-			right:20rem;
-			bottom:8rem;
+			right:32rem;
 			opacity:0;
+			top:42rem;
 		}
 		93%{
 			opacity:1;
-			right:28rem;
-			top:14.1rem;
+			right:32rem;
+			top:42rem;
 		}
 		96%{
 			transform: scale(0.85);
 			-webkit-transform: scale(0.85);
-			right:28rem;
-			top:14.1rem;
+			right:32rem;
+			top:42rem;
 			transform: rotate(180deg);
 		}
 		99%{
@@ -252,7 +295,7 @@ body{
 		100% {
 				transform: scale(0.7);
 				-webkit-transform: scale(0.7);
-				right:36rem;
-				top:18.2rem;
+				right:45.5rem;
+				top:27.4rem;
 		}
 }
