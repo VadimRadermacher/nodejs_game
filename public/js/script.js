@@ -39,27 +39,60 @@ console.log(garde.image);
 function displayRandomCard(divName, array) {
 	let cardName = array[Math.floor(Math.random() * 16)];
  	let img = document.createElement('img');
-	img.id='baron'
+	img.className='baron'
 	img.src = cardName.image;
 	let card = document.getElementById(divName);
 	card.appendChild(img);
 }
 
+displayRandomCard("card", cards);
+
+
 function displayRandomCard2(divName, array) {
-let cardName = array[Math.floor(Math.random() * 16)];
-let img2 = document.createElement('img');
-img2.id='princesse'
-img2.src = cardName.image;
-let card2 = document.getElementById(divName);
-card.appendChild(img2);
+	let cardName2 = array[Math.floor(Math.random() * 16)];
+ 	let img2 = document.createElement('img');
+	img2.className='princesse'
+	img2.src = cardName2.image;
+	let card2 = document.getElementById(divName);
+	card2.appendChild(img2);
+	console.log('José');
 }
 
-function displayRandomCard(divName, array) {
-	let cardName = array[Math.floor(Math.random() * 16)];
-displayRandomCard("card2", cards);
+displayRandomCard2("card2", cards);
+
+function displayRandomCard3(divName, array) {
+	let cardName3 = array[Math.floor(Math.random() * 16)];
+ 	let img3 = document.createElement('img');
+	img3.className='garde'
+	img3.src = cardName3.image;
+	let card3 = document.getElementById(divName);
+	card3.appendChild(img3);
+	console.log('José');
 }
-function displayRandomCard2(divName, array) {
-	let cardName = array[Math.floor(Math.random() * 16)];
-displayRandomCard("card", cards);
+
+displayRandomCard3("card3", cards);
+
+function displayRandomCard4(divName, array) {
+	let cardName4 = array[Math.floor(Math.random() * 16)];
+ 	let img4 = document.createElement('img');
+	img4.className='servante'
+	img4.src = cardName4.image;
+	let card4 = document.getElementById(divName);
+	card4.appendChild(img4);
+	console.log('José');
 }
+
+displayRandomCard4("card4", cards);
+
+function displayRandomCard5(divName, array) {
+	let cardName5 = array[Math.floor(Math.random() * 16)];
+ 	let img5 = document.createElement('img');
+	img5.className='baron2'
+	img5.src = cardName5.image;
+	let card5 = document.getElementById(divName);
+	card5.appendChild(img5);
+}
+
+displayRandomCard5("card5", cards);
+
 console.log(garde, pretre, baron, servante, prince, roi, comptesse, princesse);
