@@ -4,6 +4,7 @@
     <title>Love letter online</title>
     <script src="/socket.io/socket.io.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
+     <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
   </head>
   <body>
     <div>
@@ -13,28 +14,18 @@
       <img src='https://static1.squarespace.com/static/5b27b2777c9327b7540c512c/t/5bb336bfa4222f892878055d/1538471635164/tutorial_heart.png' class='princesseLogo'/>
     </div>
     <div>
-      <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement1'/>
-      <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement2'/>
-      <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement3'/>
-      <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement4'/>
-    <div>
+        <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement1'/>
+        <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement2'/>
+        <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement3'/>
+        <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement4'/>
+        <input id='input2' placeholder='Card name' />
+    </div>
+    <div id='deck'>
         <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack1' class='cardPack'></img>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack2' class='cardPack'/>
-  <!--      <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack3' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack4' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack5' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack6' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack7' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack8' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack9' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack10' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack11' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack12' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack13' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack14' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack15' class='cardPack'/>
-        <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack16' class='cardPack'/> -->
         <button class='toggleButton'>Take a card</button>
+    </div>
+    <div class='looseBckg'>
+        <p class='loose'>YOU LOST</p>
     </div>
   <!--  <img class='explode' id='explode' src='https://www.onlygfx.com/wp-content/uploads/2018/02/starburst-explosion-2-1.png'/>
     <img class='explode' id='explode2' src='https://www.onlygfx.com/wp-content/uploads/2018/02/starburst-explosion-2-1.png'/>
