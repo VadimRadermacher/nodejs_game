@@ -37,8 +37,8 @@ body{
 }
 .toggleButton{
 	position:absolute;
-	right:4.7rem;
-	top:27rem;
+	right:15rem;
+	top:41rem;
 	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
 	background-size: cover;
 	color:white;
@@ -92,8 +92,9 @@ body{
 	position: absolute;
 	right:30rem;
 	top:50rem;
-	max-width:15rem;
-	min-width:15rem;
+	max-width:11rem;
+	min-width:11rem;
+	animation: play1 0.7s forwards linear;
 }
 #card5>img{
 	position: absolute;
@@ -110,20 +111,7 @@ body{
 	min-width:15rem;
 	animation: play1B 5.6s forwards ;
 }
-#explode{
-	position:absolute;
-	right:48rem;
-	top:27.6rem;
-	max-width:16rem;
-	animation:appear 5.9s forwards;
-}
-#explode2{
-	position:absolute;
-	left:36rem;
-	top:17.6rem;
-	max-width:10rem;
-	animation:appear 5.9s forwards;
-}
+
 .welcomeLetters{
 	position:absolute;
 	left:65rem;
@@ -237,34 +225,6 @@ body{
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
 	margin-right:0;
-}
-#explode{
-	position:absolute;
-	right:38rem;
-	top:17.6rem;
-	max-width:10rem;
-	animation:appear 5.9s forwards;
-}
-#explode2{
-	position:absolute;
-	left:23rem;
-	top:17.6rem;
-	max-width:10rem;
-	animation:appear 5.9s forwards;
-}
-#explode3{
-	position:absolute;
-	left:23rem;
-	top:8rem;
-	max-width:10rem;
-	animation:appear 5.9s forwards;
-}
-#explode4{
-	position:absolute;
-	right:38rem;
-	top:8rem;
-	max-width:10rem;
-	animation:appear 5.9s forwards;
 }
 .welcomeLetters{
 	position:absolute;
@@ -431,18 +391,7 @@ body{
 				right:36rem;
 				top:1.2rem;
 		}
-}
-@keyframes appear2{
-	0%{
-		opacity:0:
 	}
-	95%{
-		opacity: 0;
-	}
-	100%{
-		opacity:1;
-	}
-}
 }
 /*FIN RESPONSIVE PC BECODE */
 
@@ -534,6 +483,12 @@ body{
 				opacity:0;
 				top:36rem;
 		}
+		33%{
+			transform:rotate(120deg);
+		}
+		66%{
+			transform:rotate(240deg);
+		}
 		90%{
 			transform: scale(1.0);
 			-webkit-transform: scale(1.0);
@@ -551,15 +506,12 @@ body{
 			-webkit-transform: scale(0.85);
 			right:32rem;
 			top:36rem;
-			transform: rotate(180deg);
-		}
-		99%{
-			transform: rotate(360deg);
 		}
 		100% {
-				transform: scale(0.7);
-				-webkit-transform: scale(0.7);
-				right:45.5rem;
-				top:27.4rem;
+				transform: scale(0.95);
+				-webkit-transform: scale(0.95);
+				right:47.4rem;
+				top:30rem;
+				transform:rotate(360deg);
 		}
 }
