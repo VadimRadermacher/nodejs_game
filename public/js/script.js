@@ -5,18 +5,18 @@ let baron = {name:"baron", value: 3, image: "js/baron.jpg"};
 let servante = {name:"servante", value: 4, image: "js/servante.jpg"};
 let prince = {name:"prince", value: 5, image: "js/prince.jpg"};
 let roi = {name:"roi", value: 6, image: "js/roi.jpg"};
-let comptesse = {name:"comptesse", value: 7, image: "js/comptesse.jpg"};
+let contesse = {name:"contesse", value: 7, image: "js/comptesse.jpg"};
 let princesse = {name:"princesse", value: 8, image: "js/princesse.jpg"};
 
 let cards = [
 				garde,
 				prince,
-				princesse,
 				garde,
 				servante,
 				garde,
 				pretre,
 				baron,
+				princesse,
 				garde,
 				servante,
 				pretre,
@@ -24,7 +24,7 @@ let cards = [
 				roi,
 				garde,
 				baron,
-				comptesse,
+				contesse,
 ];
 
 console.log(garde);
@@ -47,14 +47,7 @@ console.log(garde);
 // Shuffle cards
 
 function shuffle(array) {
-    let j, x, i;
-    for (i = array.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        x = array[i];
-        array[i] = array[j];
-        array[j] = x;
-    }
-    return array;
+  array.sort(() => Math.random() - 0.5);
 }
 
 console.log(cards);
@@ -66,9 +59,7 @@ console.log(cards);
 // Burn a card
 
 let burnedCard = cards.pop();
-// console.log("The burned card is " + burnedCard.name);
-
-// Draw a card
+console.log("The burned card is " + burnedCard.name);
 
 function drawCard(array) {
 	if (array.length > 0){
@@ -78,6 +69,22 @@ function drawCard(array) {
 		document.querySelector('#card').appendChild(drawedCardImg);
 		drawedCardImg.style.display='block';
 		console.log("You got: " + drawedCard.name);
+		if (drawedCard.value === 1){
+				document.querySelector('#input2').style.display ='block';
+		}
+		else {
+			document.querySelector('#input2').style.display ='none';
+		}
+		if(drawedCard.value === 8){
+			document.querySelector('.looseBckg').style.display='block';
+			document.querySelector('.toggleButton').style.display='none';
+		}
+		else{
+			document.querySelector('.looseBckg').style.display='none';
+		}
+		if (array.length === 0){
+			document.querySelector('.toggleButton').style.display='none';
+		}
 	}
 	else{
 		console.log("Game over");

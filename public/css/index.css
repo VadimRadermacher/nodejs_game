@@ -134,12 +134,12 @@ body{
 		max-width:10rem;
 		animation:pulse 5s infinite linear;
 	}
-#card>img {
+#card {
 		position: absolute;
 		right:30rem;
 		top:20rem;
-		min-width:10rem;
-		max-width:10rem;
+		min-width:9rem;
+		max-width:9rem;
 		animation: play1A 0.7s forwards linear;
 	}
 	#card5>img{
@@ -189,8 +189,17 @@ body{
 		right:5rem;
 		top:12rem;
 	}
-	#cardPack2{
-		display:none;
+	.toggleButton{
+		position:absolute;
+		right:5rem;
+		top:28rem;
+		background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
+		background-size: cover;
+		color:white;
+		width:10rem;
+		height:3rem;
+		border-style: solid;
+		border-color: black;
 	}
 .emplacement1 {
 	position: absolute;
@@ -207,6 +216,18 @@ body{
 	top:20rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	filter:drop-shadow(3px 3px 4px black);
+}
+#input2{
+	position: absolute;
+	max-width:8rem;
+	right:46rem;
+	bottom:18rem;
+	max-width:7rem;
+	padding:0.3rem;
+	background-color:grey;
+	display:none;
+	border-style:solid;
+	border-color: rgba(0, 0, 0, 0.9);
 }
 .emplacement3{
 	position: absolute;
@@ -228,10 +249,11 @@ body{
 }
 .welcomeLetters{
 	position:absolute;
+	opacity:0;
 	left:39rem;
 	top:16rem;
 	width:2rem;
-	animation:welcome 5s forwards;
+	animation:welcome 5s ;
 }
 .particles{
 	width:95%;
@@ -240,7 +262,24 @@ body{
 	position:absolute;
 	filter:drop-shadow(-3px -3px 4px green);
 }
-
+.looseBckg{
+	position:absolute;
+	right:0;
+	left:0;
+	padding-left:30rem;
+	display:block;
+	font-family: 'Wendy One', sans-serif;
+	font-size:5rem;
+	color:rgba(195, 1, 1, 1);
+	margin-bottom:3rem;
+	background-color:rgba(0, 0, 0, 0.5);
+	z-index:1;
+	animation: loser 3s linear;
+	display:none;
+}
+.loose{
+	filter: drop-shadow(0px 0px 1px white);
+}
 @keyframes play1A {
 		0% {
 				transform: scale(1.0);
@@ -275,10 +314,10 @@ body{
 		}
 		100% {
 			transform:rotate(360deg);
-				transform: scale(0.7);
-				-webkit-transform: scale(0.7);
-				right:36rem;
-				top:18.2rem;
+				transform: scale(0.642);
+				-webkit-transform: scale(0.642);
+				right:5.35rem;
+				top:1rem;
 		}
 }
 @keyframes play1B {
@@ -398,42 +437,45 @@ body{
 
 
 
-@keyframes welcome1{
+/* @keyframes welcome1{
 	0%{
 		transform: scale(1.0);
 		-webkit-transform: scale(1.0);
+		display:block;
 	}
 	50%{
 		transform:rotate(360deg);
 		transform: scale(40.0);
 		-webkit-transform: scale(40.0);
-		opacity:1;
 		left:56rem;
 	}
 	100%{
 		transform: scale(40.0);
 		-webkit-transform: scale(40.0);
-		opacity:0;
-			left:58rem;
+		display:none;
+		left:58rem;
 	}
-}
+} */
 @keyframes welcome{
 	0%{
+		opacity:0;
 		transform: scale(1.0);
 		-webkit-transform: scale(1.0);
+		display:block;
 	}
 	50%{
 		transform:rotate(360deg);
 		transform: scale(40.0);
 		-webkit-transform: scale(40.0);
-		opacity:1;
 		left:39rem;
+		opacity:1;
 	}
 	100%{
 		transform: scale(40.0);
 		-webkit-transform: scale(40.0);
+		left:42rem;
+		display:none;
 		opacity:0;
-			left:42rem;
 	}
 }
 
@@ -519,4 +561,12 @@ body{
 				top:30rem;
 				transform:rotate(360deg);
 		}
+}
+@keyframes loser{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
 }
