@@ -47,7 +47,14 @@ console.log(garde);
 // Shuffle cards
 
 function shuffle(array) {
-  array.sort(() => Math.random() - 0.5);
+    let j, x, i;
+    for (i = array.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = array[i];
+        array[i] = array[j];
+        array[j] = x;
+    }
+    return array;
 }
 
 console.log(cards);
@@ -59,7 +66,9 @@ console.log(cards);
 // Burn a card
 
 let burnedCard = cards.pop();
-console.log("The burned card is " + burnedCard.name);
+// console.log("The burned card is " + burnedCard.name);
+
+// Draw a card
 
 function drawCard(array) {
 	if (array.length > 0){
