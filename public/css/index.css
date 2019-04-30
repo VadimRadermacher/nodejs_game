@@ -117,7 +117,7 @@ body{
 	left:65rem;
 	top:28rem;
 	width:2.7rem;
-	animation:welcome1 5s forwards;
+	animation:welcome 5s forwards;
 	filter:drop-shadow(0.2px 0.2px 0.1px black);
 }
 .particles{
@@ -126,7 +126,21 @@ body{
 	opacity:0.2;
 	position:absolute;
 }
-
+.looseBckg{
+	position:absolute;
+	right:0;
+	left:0;
+	padding-left:60rem;
+	display:block;
+	font-family: 'Wendy One', sans-serif;
+	font-size:5rem;
+	color:rgba(195, 1, 1, 1);
+	margin-bottom:6rem;
+	background-color:rgba(0, 0, 0, 0.5);
+	z-index:1;
+	animation: loser 3s linear;
+	display:none;
+}
 
 /* RESPONSIVE PC BECODE  */
 @media screen and (max-width:1400px){
