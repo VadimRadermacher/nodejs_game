@@ -66,7 +66,7 @@ console.log(cards);
 // Burn a card
 
 let burnedCard = cards.pop();
-// console.log("The burned card is " + burnedCard.name);
+console.log("The burned card is " + burnedCard.name);
 
 // Draw a card
 
