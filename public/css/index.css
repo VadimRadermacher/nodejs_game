@@ -88,21 +88,21 @@ body{
 	filter:drop-shadow(3px 3px 4px black);
 	margin-right:5rem;
 }
-.baron {
+#card > img{
 	position: absolute;
 	right:30rem;
 	top:50rem;
 	max-width:15rem;
 	min-width:15rem;
 }
-.baron2{
+#card5>img{
 	position: absolute;
 	right:50rem;
 	top:50rem;
 	min-width:15rem;
 	max-width:15rem;
 }
-.princesse {
+#card2>img {
 	position: absolute;
 	left:30rem;
 	top:50rem;
@@ -146,7 +146,7 @@ body{
 		max-width:10rem;
 		animation:pulse 5s infinite linear;
 	}
-	.baron {
+#card>img {
 		position: absolute;
 		right:30rem;
 		top:0;
@@ -154,33 +154,39 @@ body{
 		max-width:10rem;
 		animation: play1A 5.6s forwards ;
 	}
-	.baron2{
+	#card5>img{
 		position: absolute;
 		right:23rem;
 		top:23rem;
 		min-width:7rem;
 		max-width:7rem;
+	}
+	#card5{
 		display:none;
 	}
-	.princesse {
-		position: absolute;
+	#card2{
 		display:none;
+	}
+#card2>img {
+		position: absolute;
 		left:15rem;
 		top:0;
 		min-width:10rem;
 		max-width:10rem;
 		animation: play1B 2s forwards ;
 	}
-	.garde{
-		position: absolute;
+	#card3{
 		display:none;
+	}
+#card3>img {
+		position: absolute;
 		left:15rem;
 		top:0;
 		min-width:10rem;
 		max-width:10rem;
 		animation: play1C 5.6s forwards ;
 	}
-	.servante{
+	#card4>img{
 		position: absolute;
 		display:none;
 		right:36rem;
@@ -274,44 +280,7 @@ body{
 	position:absolute;
 	filter:drop-shadow(-3px -3px 4px green);
 }
-.garen {
-	position:fixed;
-	bottom:0;
-	width:7%;
-	animation:garenMove 5s infinite linear;
-}
-.gary{
-	position:absolute;
-	right:0.7rem;
-	width:20%;
-	top:1rem;
-	animation:appear2 6s forwards;
-	opacity:0;
-}
-.guy{
-	position:absolute;
-	opacity:0;
-	width:8%;
-	left:33rem;
-	top:13rem;
-	animation:appear2 6s forwards;
-}
-.troll{
-	position:absolute;
-	left:6rem;
-	top:14rem;
-	transform: rotate(45deg);
-	animation:appear2 6s forwards;
-	opacity:0;
-}
-@keyframes garenMove{
-	0%{
-		left:-6rem;
-	}
-	100%{
-		left:88rem;
-	}
-}
+
 @keyframes play1A {
 		0% {
 				transform: scale(1.0);
@@ -516,20 +485,7 @@ body{
 	}
 }
 
-/* .baron:hover{
-	animation: play1 2s forwards ;
-} */
-@keyframes spin{
-	0%{
-		transform: rotate(0deg);
-	}
-	50%{
-		transform: rotate(180deg);
-	}
-	100%{
-		transform: rotate(360deg);
-	}
-}
+
 @keyframes appear{
 	0%{
 		opacity:0;
@@ -556,7 +512,6 @@ body{
 		opacity:0;
 	}
 }
-
 @keyframes pulse{
 	0%{
 		opacity:1;
@@ -568,8 +523,6 @@ body{
 		opacity:1;
 	}
 }
-
-
 @keyframes play1 {
 		0% {
 				transform: scale(1.0);
