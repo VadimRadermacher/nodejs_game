@@ -10,21 +10,21 @@ let princesse = {name:"princesse", value: 8, image: "js/princesse.jpg"};
 
 let cards = [
 				garde,
-				garde,
-				garde,
-				garde,
-				garde,
-				pretre,
-				pretre,
-				baron,
-				baron,
-				servante,
-				servante,
 				prince,
+				princesse,
+				garde,
+				servante,
+				garde,
+				pretre,
+				baron,
+				garde,
+				servante,
+				pretre,
 				prince,
 				roi,
+				garde,
+				baron,
 				comptesse,
-				princesse
 ];
 
 console.log(garde);
@@ -72,11 +72,15 @@ let burnedCard = cards.pop();
 
 function drawCard(array) {
 	if (array.length > 0){
-		let drawedCard = array.pop()
-		console.log("You got: " + drawedCard.name)
+		let drawedCard = array.pop();
+		let drawedCardImg = document.createElement('img');
+		drawedCardImg.src = drawedCard.image;
+		document.querySelector('#card').appendChild(drawedCardImg);
+		drawedCardImg.style.display='block';
+		console.log("You got: " + drawedCard.name);
 	}
 	else{
-		console.log("Game over")
+		console.log("Game over");
 	}
 }
 

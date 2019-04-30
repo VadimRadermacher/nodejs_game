@@ -149,10 +149,10 @@ body{
 #card>img {
 		position: absolute;
 		right:30rem;
-		top:0;
+		top:20rem;
 		min-width:10rem;
 		max-width:10rem;
-		animation: play1A 5.6s forwards ;
+		animation: play1A 0.7s forwards linear;
 	}
 	#card5>img{
 		position: absolute;
@@ -289,12 +289,18 @@ body{
 				bottom:32rem;
 				opacity:0;
 		}
-		90%{
+		15%{
 			transform: scale(1.0);
 			-webkit-transform: scale(1.0);
 			right:20rem;
 			bottom:8rem;
-			opacity:0;
+			opacity:1;
+		}
+		33%{
+			transform:rotate(120deg);
+		}
+		66%{
+			transform:rotate(240deg);
 		}
 		93%{
 			opacity:1;
@@ -306,12 +312,9 @@ body{
 			-webkit-transform: scale(0.85);
 			right:28rem;
 			top:14.1rem;
-			transform: rotate(180deg);
-		}
-		99%{
-			transform: rotate(360deg);
 		}
 		100% {
+			transform:rotate(360deg);
 				transform: scale(0.7);
 				-webkit-transform: scale(0.7);
 				right:36rem;
