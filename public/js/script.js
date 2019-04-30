@@ -37,6 +37,7 @@ console.log(garde);
 // 	card.appendChild(img);
 // }
 
+
 // displayRandomCard("card", cards);
 // displayRandomCard("card2", cards);
 // displayRandomCard("card3", cards);
