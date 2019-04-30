@@ -1,8 +1,9 @@
+
 let express = require('express');
 let app = express();
 let path = require('path');
-let http = require('http').Server(app);
-let io = require('socket.io')(http);
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
 let players = {};
 
 app.get('/', function(req, res){
@@ -25,7 +26,15 @@ io.on('connection', function(socket){
     socket.broadcast.emit('newPlayer', players[socket.id]);
     console.log(players[socket.id].playerName);
 
-    socket.on('disconnect', function() {
-    console.log('user disconnected');
-  });
-});
+    socket.on('disconnect', ex(() => {
+  if (game) {
+    game.removePlayer(socket.id);
+    io.in(`/game/${game.id}`).emit("gameState", game.toJson());
+    console.log(`user ${socket.id} leaved game ${game.id}`);
+    socket.leave(`/game/${game.id}`);
+    game = null;
+  }
+  console.log(`user ${socket.id} disconnected`);
+}));
+
+    });

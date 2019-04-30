@@ -1,3 +1,4 @@
+
 let garde = {name:"garde", value: 1, image: "js/garde.jpg"};
 let pretre = {name:"pretre", value: 2, image: "js/pretre.jpg"};
 let baron = {name:"baron", value: 3, image: "js/baron.jpg"};
@@ -27,7 +28,7 @@ let cards = [
 ];
 
 console.log(garde);
-console.log(garde.image);
+
 
 // function displayCard(getRandomCard(), divName){
 // 	let img = document.createElement('img');
@@ -55,7 +56,6 @@ function displayRandomCard2(divName, array) {
 	img2.src = cardName2.image;
 	let card2 = document.getElementById(divName);
 	card2.appendChild(img2);
-	console.log('José');
 }
 
 displayRandomCard2("card2", cards);
@@ -67,7 +67,6 @@ function displayRandomCard3(divName, array) {
 	img3.src = cardName3.image;
 	let card3 = document.getElementById(divName);
 	card3.appendChild(img3);
-	console.log('José');
 }
 
 displayRandomCard3("card3", cards);
@@ -79,7 +78,6 @@ function displayRandomCard4(divName, array) {
 	img4.src = cardName4.image;
 	let card4 = document.getElementById(divName);
 	card4.appendChild(img4);
-	console.log('José');
 }
 
 displayRandomCard4("card4", cards);
@@ -95,4 +93,13 @@ function displayRandomCard5(divName, array) {
 
 displayRandomCard5("card5", cards);
 
-console.log(garde, pretre, baron, servante, prince, roi, comptesse, princesse);
+
+//TAKE A CARD
+setTimeout(function(ez){
+  document.querySelector('.toggleButton').addEventListener("click", () => {
+    var f = document.querySelector('.princesse');
+    var g = document.querySelector('.baron2');
+    f.style.display='block';
+    g.style.display='block';
+  });
+},7000);
