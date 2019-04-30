@@ -483,6 +483,12 @@ body{
 				opacity:0;
 				top:36rem;
 		}
+		15%{
+			transform: scale(1.0);
+			-webkit-transform: scale(1.0);
+			bottom:8rem;
+			opacity:1;
+		}
 		33%{
 			transform:rotate(120deg);
 		}
@@ -493,7 +499,6 @@ body{
 			transform: scale(1.0);
 			-webkit-transform: scale(1.0);
 			right:32rem;
-			opacity:0;
 			top:36rem;
 		}
 		93%{
