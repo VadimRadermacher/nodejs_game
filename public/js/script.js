@@ -93,6 +93,18 @@ function drawCard(array) {
 		else {
 			document.querySelector('#input2').style.display ='none';
 		}
+		if (drawedCard.value === 2){
+				document.querySelector('.priestEffect').style.display ='block';
+		}
+		else {
+			document.querySelector('.priestEffect').style.display ='none';
+		}
+		if (drawedCard.value === 3){
+				document.querySelector('.baronEffect').style.display ='block';
+		}
+		else {
+			document.querySelector('.baronEffect').style.display ='none';
+		}
 		if (drawedCard.value === 5){
 				document.querySelector('.princeEffect').style.display ='block';
 		}
