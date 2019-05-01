@@ -139,3 +139,12 @@ function guard(){
 document.querySelector('.toggleButton').addEventListener("click", () => {
     drawCard(cards);
  });
+ document.querySelector('#focusPlayer2').addEventListener("click", () => {
+     document.querySelector('.focusPlayer').style.display='none';
+  });
+	document.querySelector('#focusPlayer3').addEventListener("click", () => {
+	    document.querySelector('.focusPlayer').style.display='none';
+	 });
+	 document.querySelector('#focusPlayer4').addEventListener("click", () => {
+	     document.querySelector('.focusPlayer').style.display='none';
+	  });
