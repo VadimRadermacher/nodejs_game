@@ -27,34 +27,13 @@ let cards = [
 				princesse,
 ];
 
-console.log(garde);
-
-
-// function displayCard(getRandomCard(), divName){
-// 	let img = document.createElement('img');
-// 	img.src = cardName.image;
-// 	let card = document.getElementById(divName);
-// 	card.appendChild(img);
-// }
-
-
-// displayRandomCard("card", cards);
-// displayRandomCard("card2", cards);
-// displayRandomCard("card3", cards);
-// displayRandomCard("card4", cards);
-// displayRandomCard("card5", cards);
-
 // Shuffle cards
 
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
 
-console.log(cards);
-
 shuffle(cards);
-
-console.log(cards);
 
 // Burn a card
 
