@@ -5,6 +5,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
      <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
   </head>
   <body>
     <div>
@@ -19,6 +20,23 @@
         <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement3'/>
         <img src='https://www.freeiconspng.com/uploads/borders-png-24.png' class='emplacement4'/>
         <input id='input2' placeholder='Card name' />
+        <div class='focusPlayer'>
+            <button type='submit' id='focusPlayer2' class='focus'>Player 2</button>
+            <button type='submit' id='focusPlayer3' class='focus'>Player 3</button>
+            <button type='submit' id='focusPlayer4' class='focus'>Player 4</button>
+        </div>
+        <div class='priestEffect'>
+            <p id='priestEffect' class='cardEffect'>Which card do you</br>want to see?</p>
+        </div>
+        <div class='baronEffect'>
+            <p id='baronEffect' class='cardEffect'>Who do you want</br>to fight with?</p>
+        </div>
+        <div class='princeEffect'>
+            <p id='princeEffect' class='cardEffect'>Who should throw</br> his card?</p>
+        </div>
+        <div class='kingEffect'>
+            <p id='kingEffect' class='cardEffect'>Who do you want</br>to exchange with?</p>
+        </div>
     </div>
     <div id='deck'>
         <img src='https://static.squarespace.com/static/533971eae4b0d65d94f90d00/534c440de4b01c283cdab8e5/534c4419e4b01c283cdac27a/1369299279000/lovelettercover.jpg?format=original' id='cardPack1' class='cardPack'></img>
@@ -39,7 +57,7 @@
     </div>
     <div id='card4'>
     </div>
-    <div id='card5'>
+    <div id='holdCards1'>
     </div>
     <div>
         <img class='welcomeLetters' src='https://static1.squarespace.com/static/5b27b2777c9327b7540c512c/t/5b64485bf950b77f65b169fc/1533298791072/love-letter-logo.png'/>

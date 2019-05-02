@@ -16,7 +16,6 @@ let cards = [
 				garde,
 				pretre,
 				baron,
-				princesse,
 				garde,
 				servante,
 				pretre,
@@ -25,6 +24,7 @@ let cards = [
 				garde,
 				baron,
 				contesse,
+				princesse,
 ];
 
 console.log(garde);
@@ -72,10 +72,52 @@ function drawCard(array) {
 		drawedCardImg.style.display='block';
 		console.log("You got: " + drawedCard.name);
 		if (drawedCard.value === 1){
+			document.querySelector('.focusPlayer').style.display ='block';
+		}
+		else if (drawedCard.value === 2) {
+			document.querySelector('.focusPlayer').style.display ='block';
+		}
+		else if (drawedCard.value === 3) {
+			document.querySelector('.focusPlayer').style.display ='block';
+		}
+		else if (drawedCard.value === 5) {
+			document.querySelector('.focusPlayer').style.display ='block';
+		}
+		else if (drawedCard.value === 6) {
+			document.querySelector('.focusPlayer').style.display ='block';
+		}
+		else{
+			document.querySelector('.focusPlayer').style.display ='none';
+		}
+		if (drawedCard.value === 1){
 				document.querySelector('#input2').style.display ='block';
 		}
 		else {
 			document.querySelector('#input2').style.display ='none';
+		}
+		if (drawedCard.value === 2){
+				document.querySelector('.priestEffect').style.display ='block';
+		}
+		else {
+			document.querySelector('.priestEffect').style.display ='none';
+		}
+		if (drawedCard.value === 3){
+				document.querySelector('.baronEffect').style.display ='block';
+		}
+		else {
+			document.querySelector('.baronEffect').style.display ='none';
+		}
+		if (drawedCard.value === 5){
+				document.querySelector('.princeEffect').style.display ='block';
+		}
+		else {
+			document.querySelector('.princeEffect').style.display ='none';
+		}
+		if (drawedCard.value === 6){
+				document.querySelector('.kingEffect').style.display ='block';
+		}
+		else {
+			document.querySelector('.kingEffect').style.display ='none';
 		}
 		if(drawedCard.value === 8){
 			document.querySelector('.looseBckg').style.display='block';
@@ -94,6 +136,20 @@ function drawCard(array) {
 	}
 }
 
+
+
 document.querySelector('.toggleButton').addEventListener("click", () => {
     drawCard(cards);
  });
+ document.querySelector('#focusPlayer2').addEventListener("click", () => {
+     document.querySelector('.focusPlayer').style.display='none';
+		 document.querySelector('#input2').style.display='none';
+  });
+	document.querySelector('#focusPlayer3').addEventListener("click", () => {
+	    document.querySelector('.focusPlayer').style.display='none';
+			document.querySelector('#input2').style.display='none';
+	 });
+	 document.querySelector('#focusPlayer4').addEventListener("click", () => {
+	     document.querySelector('.focusPlayer').style.display='none';
+			 document.querySelector('#input2').style.display='none';
+	  });
