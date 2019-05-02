@@ -86,10 +86,11 @@ function drawCard(array) {
 		}
 		if (array.length === 0){
 			document.querySelector('.toggleButton').style.display='none';
+			console.log("No princesse, padim loses");
 		}
 	}
 	else{
-		console.log("Game over");
+		
 	}
 }
 
