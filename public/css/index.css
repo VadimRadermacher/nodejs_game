@@ -155,8 +155,8 @@ body{
 }
 #focusPlayer2{
 	position:absolute;
-	right:36;
-	top:20;
+	right:33rem;
+	top:20rem;
 	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
 	background-size: cover;
 	color:white;
@@ -167,7 +167,7 @@ body{
 }
 #focusPlayer3{
 	position:absolute;
-	right:36rem;
+	right:33rem;
 	top:24rem;
 	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
 	background-size: cover;
@@ -199,6 +199,9 @@ body{
 	display:none;
 }
 .kingEffect{
+	display:none;
+}
+.focusPlayer{
 	display:none;
 }
 
