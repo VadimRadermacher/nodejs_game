@@ -153,6 +153,55 @@ body{
 	text-transform:uppercase;
 	text-shadow: 0px 0px 2px white;
 }
+#focusPlayer2{
+	position:absolute;
+	right:36;
+	top:20;
+	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
+	background-size: cover;
+	color:white;
+	width:10rem;
+	height:3rem;
+	/* border-style: solid;
+	border-color: black; */
+}
+#focusPlayer3{
+	position:absolute;
+	right:36rem;
+	top:24rem;
+	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
+	background-size: cover;
+	color:white;
+	width:10rem;
+	height:3rem;
+	/* border-style: solid;
+	border-color: black; */
+}
+#focusPlayer4{
+	position:absolute;
+	right:36rem;
+	top:28rem;
+	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
+	background-size: cover;
+	color:white;
+	width:10rem;
+	height:3rem;
+	/* border-style: solid;
+	border-color: black; */
+}
+.priestEffect{
+	display:none;
+}
+.baronEffect{
+	display:none;
+}
+.princeEffect{
+	display:none;
+}
+.kingEffect{
+	display:none;
+}
+
 
 /* RESPONSIVE PC BECODE  */
 @media screen and (max-width:1400px){

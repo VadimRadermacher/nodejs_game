@@ -28,22 +28,22 @@ let cards = [
 ];
 
 console.log(garde);
-
-
+//
+//
 // function displayCard(getRandomCard(), divName){
 // 	let img = document.createElement('img');
 // 	img.src = cardName.image;
 // 	let card = document.getElementById(divName);
 // 	card.appendChild(img);
 // }
-
-
+//
+//
 // displayRandomCard("card", cards);
 // displayRandomCard("card2", cards);
 // displayRandomCard("card3", cards);
 // displayRandomCard("card4", cards);
 // displayRandomCard("card5", cards);
-
+//
 // Shuffle cards
 
 function shuffle(array) {
@@ -124,11 +124,8 @@ function drawCard(array) {
 		else{
 			document.querySelector('.looseBckg').style.display='none';
 		}
-		if (array.length === 0){
-			document.querySelector('.toggleButton').style.display='none';
-		}
-	}
 	else{
+		document.querySelector('.toggleButton').style.display='none';
 		console.log("Game over");
 	}
 }
