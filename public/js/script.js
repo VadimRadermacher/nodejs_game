@@ -106,20 +106,12 @@ function drawCard(array) {
 		else{
 			document.querySelector('.looseBckg').style.display='none';
 		}
-<<<<<<< HEAD
+
 		if (array.length === 0){
 			document.querySelector('.toggleButton').style.display='none';
 			console.log("No princesse, padim loses");
 		}
-	}
-	else{
-		
-=======
-	else{
-		document.querySelector('.toggleButton').style.display='none';
-		console.log("Game over");
->>>>>>> 592444242933b050d65e4dc1512e3a6ec6f1d4a5
-	}
+	}	
 }
 
 
