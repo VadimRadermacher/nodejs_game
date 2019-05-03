@@ -66,6 +66,7 @@ function drawCard(array) {
 		let drawedCard = array.pop();
 		let drawedCardImg = document.createElement('img');
 		drawedCardImg.src = drawedCard.image;
+		drawedCardImg.className='imageCard';
 		document.querySelector('#card').appendChild(drawedCardImg);
 		drawedCardImg.style.display='block';
 		console.log("You got: " + drawedCard.name);
@@ -124,16 +125,23 @@ function drawCard(array) {
 		else{
 			document.querySelector('.looseBckg').style.display='none';
 		}
+	}
 	else{
 		document.querySelector('.toggleButton').style.display='none';
 		console.log("Game over");
 	}
 }
 
-
+function playCard(){
+	document.querySelector('.imageCard').addEventListener("click", () => {
+			document.querySelector('.imageCard').style.left='39.9rem';
+			document.querySelector('.imageCard').style.top='18.9rem';
+	 });
+}
 
 document.querySelector('.toggleButton').addEventListener("click", () => {
     drawCard(cards);
+		playCard();
  });
  document.querySelector('#focusPlayer2').addEventListener("click", () => {
      document.querySelector('.focusPlayer').style.display='none';
