@@ -27,39 +27,21 @@ let cards = [
 				princesse,
 ];
 
-console.log(garde);
-//
-//
-// function displayCard(getRandomCard(), divName){
-// 	let img = document.createElement('img');
-// 	img.src = cardName.image;
-// 	let card = document.getElementById(divName);
-// 	card.appendChild(img);
-// }
-//
-//
-// displayRandomCard("card", cards);
-// displayRandomCard("card2", cards);
-// displayRandomCard("card3", cards);
-// displayRandomCard("card4", cards);
-// displayRandomCard("card5", cards);
-//
+
 // Shuffle cards
 
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
 
-console.log(cards);
-
 shuffle(cards);
-
-console.log(cards);
 
 // Burn a card
 
 let burnedCard = cards.pop();
 console.log("The burned card is " + burnedCard.name);
+
+// Draw a card
 
 function drawCard(array) {
 	if (array.length > 0){
@@ -96,9 +78,11 @@ function drawCard(array) {
 		}
 		if (drawedCard.value === 2){
 				document.querySelector('.priestEffect').style.display ='block';
+				document.querySelector('.priestRules').style.display='block';
 		}
 		else {
 			document.querySelector('.priestEffect').style.display ='none';
+			document.querySelector('.priestRules').style.display='none';
 		}
 		if (drawedCard.value === 3){
 				document.querySelector('.baronEffect').style.display ='block';
@@ -108,9 +92,11 @@ function drawCard(array) {
 		}
 		if (drawedCard.value === 5){
 				document.querySelector('.princeEffect').style.display ='block';
+				document.querySelector('.princeRules').style.display='block';
 		}
 		else {
 			document.querySelector('.princeEffect').style.display ='none';
+			document.querySelector('.princeRules').style.display='none';
 		}
 		if (drawedCard.value === 6){
 				document.querySelector('.kingEffect').style.display ='block';
@@ -125,10 +111,11 @@ function drawCard(array) {
 		else{
 			document.querySelector('.looseBckg').style.display='none';
 		}
-	}
-	else{
-		document.querySelector('.toggleButton').style.display='none';
-		console.log("Game over");
+
+		if (array.length === 0){
+			document.querySelector('.toggleButton').style.display='none';
+			console.log("No Vrincesse, padim loses");
+		}
 	}
 }
 
