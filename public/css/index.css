@@ -156,7 +156,7 @@ body{
 	position:absolute;
 	right:33rem;
 	top:20rem;
-	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
+	background:linear-gradient(#e66465, #9198e5);
 	background-size: cover;
 	color:white;
 	width:10rem;
@@ -168,7 +168,7 @@ body{
 	position:absolute;
 	right:33rem;
 	top:24rem;
-	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
+	background:linear-gradient(#e66465, #9198e5);
 	background-size: cover;
 	color:white;
 	width:10rem;
@@ -180,7 +180,7 @@ body{
 	position:absolute;
 	right:36rem;
 	top:28rem;
-	background-image:url('https://bobandsuewilliams.com/images/black-red-1.jpg');
+	background:linear-gradient(#e66465, #9198e5);
 	background-size: cover;
 	color:white;
 	width:10rem;
@@ -211,8 +211,7 @@ body{
 		max-width:10rem;
 		animation:pulse 5s infinite linear;
 	}
-#card {
-		position: absolute;
+#card>img {
 		right:30rem;
 		top:20rem;
 		min-width:9rem;
@@ -317,6 +316,22 @@ body{
 	/* border-style: solid;
 	border-color: black; */
 }
+.priestRules, .princeRules{
+	position:absolute;
+	background-color:rgba(0, 0, 0, 0.7);
+	color:white;
+	border-radius:10%;
+	max-width:6rem;
+	right:17rem;
+	bottom:1rem;
+	text-align: center;
+	padding:1rem;
+	animation: pulse 2s infinite linear;
+	display:none;
+}
+#priestRules{
+	font-size: 0.8rem;
+}
 .priestEffect{
 	display:none;
 }
@@ -378,22 +393,13 @@ body{
 	filter:drop-shadow(3px 3px 4px black);
 	margin-right:0;
 }
-#holdCards1>img{
-	position:absolute;
-	right:23rem;
-	bottom:0;
-	max-width:6rem;
-}
-#holdCards1:hover{
-	cursor:pointer;
-}
 .welcomeLetters{
 	position:absolute;
-	opacity:0;
+	opacity:1;
 	left:39rem;
 	top:16rem;
 	width:2rem;
-	animation:welcome 5s ;
+	animation:welcome1 3s linear forwards ;
 }
 .particles{
 	width:95%;
@@ -443,21 +449,21 @@ body{
 		}
 		93%{
 			opacity:1;
-			right:28rem;
-			top:14.1rem;
+			right:20rem;
+			top:20rem;
 		}
 		96%{
 			transform: scale(0.85);
 			-webkit-transform: scale(0.85);
-			right:28rem;
-			top:14.1rem;
+			right:22rem;
+			top:22rem;
 		}
 		100% {
 			transform:rotate(360deg);
-				transform: scale(0.642);
-				-webkit-transform: scale(0.642);
-				right:5.35rem;
-				top:1rem;
+				transform: scale(0.75);
+				-webkit-transform: scale(0.75);
+				right:25rem;
+				top:24rem;
 		}
 }
 @keyframes play1B {
@@ -618,7 +624,32 @@ body{
 		opacity:0;
 	}
 }
-
+@keyframes welcome1{
+	0%{
+		transform: scale(30.0);
+		-webkit-transform: scale(30.0);
+		left:-18rem;
+		display:block;
+	}
+	10%{
+		left:36rem;
+		transform: scale(30.0);
+		-webkit-transform: scale(30.0);
+	}
+	90%{
+		left:42rem;
+		transform: scale(30.0);
+		-webkit-transform: scale(30.0);
+		opacity:1;
+	}
+	100%{
+		left:-18rem;
+		display:none;
+		transform: scale(30.0);
+		-webkit-transform: scale(30.0);
+		opacity:0;
+	}
+}
 
 @keyframes appear{
 	0%{
