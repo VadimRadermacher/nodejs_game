@@ -4,7 +4,7 @@ const _ = require('lodash');
 module.exports = class Game {
   constructor() {
     this.id = uuidv4();
-    this.players = [null, null];
+    this.players = [null, null, null, null];
     this.reset();
   }
 }

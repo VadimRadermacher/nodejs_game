@@ -1,4 +1,3 @@
-
 let garde = {name:"garde", value: 1, image: "js/garde.jpg"};
 let pretre = {name:"pretre", value: 2, image: "js/pretre.jpg"};
 let baron = {name:"baron", value: 3, image: "js/baron.jpg"};
@@ -7,6 +6,7 @@ let prince = {name:"prince", value: 5, image: "js/prince.jpg"};
 let roi = {name:"roi", value: 6, image: "js/roi.jpg"};
 let contesse = {name:"contesse", value: 7, image: "js/comptesse.jpg"};
 let princesse = {name:"princesse", value: 8, image: "js/princesse.jpg"};
+let socket = io();
 
 let cards = [
 				garde,
@@ -131,3 +131,4 @@ document.querySelector('.toggleButton').addEventListener("click", () => {
 	     document.querySelector('.focusPlayer').style.display='none';
 			 document.querySelector('#input2').style.display='none';
 	  });
+
