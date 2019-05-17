@@ -320,6 +320,7 @@ body{
 .priestRules, .princeRules{
 	position:absolute;
 	background-color:rgba(0, 0, 0, 0.7);
+	color:white;
 	border-radius:10%;
 	max-width:6rem;
 	right:17rem;
@@ -395,11 +396,11 @@ body{
 }
 .welcomeLetters{
 	position:absolute;
-	opacity:0;
+	opacity:1;
 	left:39rem;
 	top:16rem;
 	width:2rem;
-	animation:welcome 5s ;
+	animation:welcome1 3s linear forwards ;
 }
 .particles{
 	width:95%;
@@ -624,7 +625,32 @@ body{
 		opacity:0;
 	}
 }
-
+@keyframes welcome1{
+	0%{
+		transform: scale(30.0);
+		-webkit-transform: scale(30.0);
+		left:-18rem;
+		display:block;
+	}
+	10%{
+		left:36rem;
+		transform: scale(30.0);
+		-webkit-transform: scale(30.0);
+	}
+	90%{
+		left:42rem;
+		transform: scale(30.0);
+		-webkit-transform: scale(30.0);
+		opacity:1;
+	}
+	100%{
+		left:-18rem;
+		display:none;
+		transform: scale(30.0);
+		-webkit-transform: scale(30.0);
+		opacity:0;
+	}
+}
 
 @keyframes appear{
 	0%{
